@@ -19,5 +19,6 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('<slug:slug>', views.redirecionar)
+    path('<slug:slug>', views.redirecionar),
+    path('relatorios/<slug:slug>', views.relatorios)
 ]
